@@ -1,0 +1,25 @@
+version: "3.1"
+nlu:
+- intent: book_ticket
+  examples: |
+    - I want to book a ticket
+    - Can I book a flight to [New York](destination)?
+    - I need to book a ticket to [London](destination)
+    - Book a ticket to [Paris](destination)
+    - Reserve a flight to [Berlin](destination)
+
+- intent: ask_menu
+  examples: |
+    - What's on the menu?
+    - Can you recommend something from the menu?
+    - What dishes do you have?
+    - Tell me about today's specials
+    - Do you have any vegetarian options?
+
+- intent: troubleshoot
+  examples: |
+    - I'm having trouble with my product
+    - My device is not working
+    - How do I fix my [laptop](product)?
+    - The [phone](product) I bought is malfunctioning
+    - I need help with troubleshooting my [tablet](product)

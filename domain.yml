@@ -1,0 +1,34 @@
+version: "3.1"
+intents:
+  - book_ticket
+  - ask_menu
+  - troubleshoot
+
+entities:
+  - destination
+  - product
+
+slots:
+  destination:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: destination
+  product:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product
+
+responses:
+  utter_ask_destination:
+    - text: "Where would you like to go?"
+  utter_menu_recommendations:
+    - text: "Here are some recommendations from the menu: ..."
+  utter_troubleshooting_help:
+    - text: "Let me help you troubleshoot your product. What seems to be the issue?"
+
+actions:
+  - action_book_ticket
+  - action_ask_menu
+  - action_troubleshoot

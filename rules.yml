@@ -1,0 +1,16 @@
+version: "3.1"
+rules:
+- rule: Book a ticket rule
+  steps:
+  - intent: book_ticket
+  - action: action_book_ticket
+
+- rule: Ask for menu recommendations rule
+  steps:
+  - intent: ask_menu
+  - action: action_ask_menu
+
+- rule: Troubleshoot a product rule
+  steps:
+  - intent: troubleshoot
+  - action: action_troubleshoot
